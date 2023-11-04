@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".task1">
+
+    <ImageView
+        android:id="@+id/Who"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:layout_weight="50"
+        android:adjustViewBounds="true"
+        android:maxWidth="150px"
+        android:maxHeight="100px"
+        android:minWidth="150px"
+        android:minHeight="100px"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="Начать" />
+
+
+</LinearLayout>
